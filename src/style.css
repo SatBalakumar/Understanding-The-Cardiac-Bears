@@ -885,45 +885,6 @@ tr.loss-row {
 .ss-item:nth-child(3) { animation-delay: 0.2s; }
 .ss-item:nth-child(4) { animation-delay: 0.25s; }
 
-/* ========== RESPONSIVE ========== */
-@media (max-width: 1024px) {
-    .kf-grid { grid-template-columns: repeat(2, 1fr); }
-    .stat-cards { grid-template-columns: repeat(3, 1fr); }
-    .stat-cards-5 { grid-template-columns: repeat(3, 1fr); }
-    .adv-metrics-row { grid-template-columns: repeat(3, 1fr); }
-    .turnover-stats { grid-template-columns: repeat(3, 1fr); }
-    .header-nav { display: none; }
-    .player-grid-1x3 { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 768px) {
-    .section-title { font-size: 1.5rem; }
-    .kf-grid { grid-template-columns: 1fr; }
-    .kf-number { font-size: 2rem; }
-    .stat-cards { grid-template-columns: repeat(2, 1fr); }
-    .stat-cards-5 { grid-template-columns: repeat(2, 1fr); }
-    .adv-metrics-row { grid-template-columns: repeat(2, 1fr); }
-    .dual-chart-row { flex-direction: column; }
-    .insight-cards { grid-template-columns: 1fr; }
-    .ttt-grid { grid-template-columns: 1fr; }
-    .turnover-stats { grid-template-columns: repeat(2, 1fr); }
-    .season-stats-bar { grid-template-columns: repeat(2, 1fr); }
-    .header-title { font-size: 0.95rem; }
-    .header-subtitle { display: none; }
-    .player-grid-2x2 { grid-template-columns: 1fr; }
-    .player-grid-1x2 { grid-template-columns: 1fr; }
-    .player-grid-1x3 { grid-template-columns: 1fr; }
-    .cs-split { grid-template-columns: 1fr; }
-    .cs-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
-}
-
-@media (max-width: 480px) {
-    .stat-cards { grid-template-columns: 1fr; }
-    .stat-cards-5 { grid-template-columns: 1fr; }
-    .adv-metrics-row { grid-template-columns: 1fr; }
-    .turnover-stats { grid-template-columns: 1fr; }
-    .season-stats-bar { grid-template-columns: 1fr; }
-}
 
 /* ========== STAT CARDS 5-COL ========== */
 .stat-cards-5 {
@@ -1325,11 +1286,6 @@ tr.loss-row {
     animation: fadeInUp 0.5s ease both;
 }
 
-@media (max-width: 768px) {
-    .splits-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* ========== SECTION G: COVERAGE SCHEMES ========== */
 .coverage-philosophy-row {
@@ -1387,11 +1343,262 @@ tr.loss-row {
     margin-bottom: 2.5rem;
 }
 
-@media (max-width: 768px) {
-    .coverage-philosophy-row {
-        grid-template-columns: 1fr;
-    }
+
+/* ========== RESPONSIVE ========== */
+
+/* --- Tablet (max-width: 1024px) --- */
+@media (max-width: 1024px) {
+    .kf-grid { grid-template-columns: repeat(2, 1fr); }
+    .stat-cards { grid-template-columns: repeat(3, 1fr); }
+    .stat-cards-5 { grid-template-columns: repeat(3, 1fr); }
+    .adv-metrics-row { grid-template-columns: repeat(3, 1fr); }
+    .turnover-stats { grid-template-columns: repeat(3, 1fr); }
+    .player-grid-1x3 { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* --- Small Tablet / Large Phone (max-width: 768px) --- */
+@media (max-width: 768px) {
+    /* Container */
+    .container { padding: 0 16px; }
+    .header-inner { padding: 8px 16px 0; }
+
+    /* Typography */
+    .section-title { font-size: 1.4rem; }
+    .section-intro { font-size: 0.85rem; }
+    .subsection-title { font-size: 1rem; }
+
+    /* Header */
+    .header-title { font-size: 0.9rem; }
+    .header-subtitle { display: none; }
+    .brand-mark { width: 32px; height: 32px; font-size: 0.7rem; }
+    .header-brand { gap: 10px; }
+
+    /* Hero / Key Findings */
+    .kf-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .kf-number { font-size: 1.8rem; }
+    .kf-desc { font-size: 0.75rem; }
+    .key-findings { padding: 1.5rem; }
+    .season-stats-bar { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .ss-value { font-size: 1.4rem; }
+
+    /* Sections */
+    .section { padding: 2.5rem 0; }
+    .hero { padding: 2rem 0 2rem; }
+
+    /* Stat Cards */
+    .stat-cards { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .stat-cards-5 { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .sc-value { font-size: 1.3rem; }
+    .stat-card { padding: 1rem 0.8rem; }
+
+    /* Advanced Metrics */
+    .adv-metrics-row { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .adv-val { font-size: 1.1rem; }
+
+    /* Charts */
+    .dual-chart-row { flex-direction: column; }
+    .chart-container { padding: 1rem; }
+
+    /* Insight Cards */
+    .insight-cards { grid-template-columns: 1fr; }
+
+    /* TTT Grid */
+    .ttt-grid { grid-template-columns: 1fr; }
+    .ttt-val { font-size: 1.8rem; }
+
+    /* Turnover Stats */
+    .turnover-stats { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .to-val { font-size: 1.8rem; }
+    .to-card { padding: 1rem 0.8rem; }
+
+    /* Player Cards */
+    .player-grid-2x2 { grid-template-columns: 1fr; }
+    .player-grid-1x2 { grid-template-columns: 1fr; }
+    .player-grid-1x3 { grid-template-columns: 1fr; }
+    .player-card { padding: 1.2rem; }
+    .pc-name { font-size: 1.05rem; }
+
+    /* Case Study */
+    .cs-split { grid-template-columns: 1fr; }
+    .cs-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    .cs-body { padding: 1.2rem; }
+    .cs-half { padding: 1rem; }
+
+    /* Game Card */
+    .game-card-header { padding: 1rem; flex-wrap: wrap; gap: 0.5rem; }
+    .gc-left { gap: 0.8rem; }
+    .gc-matchup { font-size: 0.95rem; }
+    .gc-score { font-size: 1.1rem; }
+    .gc-details { padding: 0 1rem 1rem; padding-top: 1rem; }
+
+    /* Coverage */
+    .coverage-philosophy-row { grid-template-columns: 1fr; gap: 1rem; }
+    .cov-philosophy-card { padding: 1.25rem 1rem; }
+    .cov-philosophy-card h4 { font-size: 1rem; }
+    .cov-philosophy-card p { font-size: 0.82rem; }
+
+    /* Deep Insight */
+    .deep-insight { padding: 1.2rem; }
+    .deep-insight p { font-size: 0.82rem; }
+
+    /* Methodology */
+    .methodology-note { padding: 0.8rem 1rem; font-size: 0.75rem; }
+
+    /* Sources */
+    .sources-grid a { padding: 6px 12px; font-size: 0.72rem; }
+}
+
+/* --- Phone (max-width: 480px) --- */
+@media (max-width: 480px) {
+    /* Container */
+    .container { padding: 0 12px; }
+    .header-inner { padding: 6px 12px 0; }
+
+    /* Typography */
+    .section-title { font-size: 1.2rem; }
+    .section-intro { font-size: 0.8rem; max-width: 100%; }
+    .subsection-title { font-size: 0.95rem; }
+    .chart-title { font-size: 0.88rem; }
+    .chart-note { font-size: 0.72rem; }
+
+    /* Header */
+    .header-title { font-size: 0.85rem; }
+    .header-nav a { font-size: 0.65rem; padding: 4px 8px; }
+    .header-nav { gap: 1px; padding-bottom: 6px; }
+    .header-inner { gap: 4px; }
+
+    /* Hero / Key Findings */
+    .kf-grid { grid-template-columns: 1fr; gap: 0.8rem; }
+    .kf-number { font-size: 1.6rem; }
+    .key-findings { padding: 1.2rem; }
+    .season-stats-bar { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .ss-value { font-size: 1.2rem; }
+    .ss-item { padding: 0.75rem; }
+
+    /* Sections */
+    .section { padding: 2rem 0; }
+    .hero { padding: 1.5rem 0; }
+
+    /* Stat Cards */
+    .stat-cards { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .stat-cards-5 { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .sc-value { font-size: 1.15rem; }
+    .sc-label { font-size: 0.65rem; }
+    .sc-detail { font-size: 0.6rem; }
+    .stat-card { padding: 0.8rem 0.6rem; }
+
+    /* Advanced Metrics */
+    .adv-metrics-row { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .adv-val { font-size: 1rem; }
+    .adv-lbl { font-size: 0.62rem; }
+    .adv-item { padding: 0.75rem 0.4rem; }
+
+    /* Charts */
+    .chart-container { padding: 0.8rem; margin-bottom: 1rem; }
+
+    /* TTT */
+    .ttt-val { font-size: 1.5rem; }
+    .ttt-card { padding: 1rem; }
+    .ttt-detail { font-size: 0.78rem; }
+
+    /* Turnover Stats */
+    .turnover-stats { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .to-val { font-size: 1.5rem; }
+    .to-label { font-size: 0.68rem; }
+    .to-note { font-size: 0.62rem; }
+    .to-card { padding: 0.8rem 0.6rem; }
+    /* Center the odd one out */
+    .turnover-stats .to-card:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        justify-self: center;
+    }
+
+    /* Insight Cards */
+    .insight-card { padding: 1.2rem; }
+    .insight-card h4 { font-size: 0.9rem; }
+    .insight-card p { font-size: 0.78rem; }
+    .ic-icon { font-size: 1.2rem; margin-bottom: 0.5rem; }
+
+    /* Player Cards */
+    .player-card { padding: 1rem; }
+    .pc-name { font-size: 1rem; }
+    .pc-role { font-size: 0.68rem; }
+    .pc-stat-row { font-size: 0.75rem; }
+    .pc-stat-row span:first-child { font-size: 0.68rem; }
+    .pc-note { font-size: 0.7rem; }
+    .pc-comeback { font-size: 0.72rem; }
+
+    /* Split Cards (WR/TE) */
+    .split-card-header { padding: 0.8rem 1rem; }
+    .split-player-name { font-size: 0.95rem; }
+    .split-player-role { font-size: 0.65rem; }
+    .split-row { font-size: 0.72rem; gap: 4px; }
+    .split-row span:first-child { font-size: 0.65rem; }
+    .split-row-header span { font-size: 0.62rem !important; }
+    .split-card-note { font-size: 0.7rem; padding: 0.6rem 1rem; }
+    .split-card-body { padding: 0.4rem 0.8rem 0.6rem; }
+
+    /* Case Study */
+    .cs-header { padding: 0.8rem 1rem; }
+    .cs-badge { font-size: 0.6rem; padding: 3px 8px; }
+    .cs-title { font-size: 0.9rem; }
+    .cs-body { padding: 1rem; }
+    .cs-half { padding: 0.8rem; }
+    .cs-half h4 { font-size: 0.78rem; }
+    .cs-stat { font-size: 0.75rem; }
+    .cs-note { font-size: 0.75rem; }
+
+    /* Game Card */
+    .game-card-header { padding: 0.8rem; }
+    .gc-week { font-size: 0.68rem; min-width: 40px; }
+    .gc-matchup { font-size: 0.88rem; }
+    .gc-score { font-size: 1rem; }
+    .gc-narrative { font-size: 0.78rem; }
+    .gc-statline { font-size: 0.72rem; }
+    .gc-details { padding: 0 0.8rem 1rem; padding-top: 0.8rem; }
+
+    /* Coverage Philosophy */
+    .cov-philosophy-card { padding: 1rem 0.8rem; }
+    .cov-phil-icon { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .cov-philosophy-card h4 { font-size: 0.9rem; }
+    .cov-philosophy-card p { font-size: 0.78rem; }
+
+    /* Deep Insight */
+    .deep-insight { padding: 1rem; }
+    .deep-insight p { font-size: 0.78rem; line-height: 1.65; }
+
+    /* Methodology */
+    .methodology-note { padding: 0.7rem 0.8rem; font-size: 0.72rem; }
+
+    /* Tables */
+    .data-table { font-size: 0.72rem; }
+    .data-table th { font-size: 0.6rem; padding: 8px 10px; }
+    .data-table td { padding: 7px 10px; }
+
+    /* Legend */
+    .chart-legend-custom { gap: 0.8rem; }
+    .legend-item { font-size: 0.68rem; }
+    .legend-dot { width: 8px; height: 8px; }
+
+    /* Sources */
+    .sources-grid a { padding: 5px 10px; font-size: 0.68rem; }
+    .sources-grid { gap: 0.5rem; }
+
+    /* Footer */
+    .site-footer p { font-size: 0.72rem; }
+    .footer-small { font-size: 0.62rem !important; }
+
+    /* Table notes */
+    .table-note { font-size: 0.7rem; }
+}
+
+/* Splits grid mobile */
+@media (max-width: 768px) {
+    .splits-grid { grid-template-columns: 1fr; }
+    .split-card-body { padding: 0.4rem 1rem 0.6rem; }
+}
+
 
 /* ========== PRINT ========== */
 @media print {
