@@ -137,22 +137,28 @@ h1, h2, h3, h4 {
 .header-inner {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 10px 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.header-top-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 64px;
+    gap: 14px;
 }
 
 .header-brand {
     display: flex;
     align-items: center;
     gap: 14px;
+    flex-shrink: 0;
 }
 
 .brand-mark {
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
     background: var(--orange);
     border-radius: 8px;
     display: flex;
@@ -160,7 +166,7 @@ h1, h2, h3, h4 {
     justify-content: center;
     font-family: var(--font-heading);
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: var(--white);
     letter-spacing: -1px;
     flex-shrink: 0;
@@ -169,33 +175,47 @@ h1, h2, h3, h4 {
 .brand-c { margin-right: -1px; }
 
 .header-title {
-    font-size: 1.15rem;
+    font-size: 1rem;
     color: var(--white);
     font-weight: 600;
     line-height: 1.2;
+    white-space: nowrap;
 }
 
 .header-subtitle {
-    font-size: 0.7rem;
+    font-size: 0.62rem;
     color: var(--gray-400);
     font-weight: 400;
     letter-spacing: 0.03em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .header-nav {
     display: flex;
-    gap: 0;
+    gap: 2px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 8px;
+}
+
+.header-nav::-webkit-scrollbar {
+    display: none;
 }
 
 .header-nav a {
     color: var(--gray-300);
     text-decoration: none;
-    font-size: 0.78rem;
+    font-size: 0.72rem;
     font-weight: 500;
-    padding: 8px 14px;
+    padding: 5px 10px;
     border-radius: 6px;
     transition: var(--transition);
     letter-spacing: 0.02em;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .header-nav a:hover {
