@@ -1,5 +1,5 @@
 /* ================================================
-   BEARS COMEBACK ANALYTICS — app.js
+   BEARS COMEBACK ANALYTICS - app.js
    Chart.js visualizations + interactivity
    ================================================ */
 
@@ -80,7 +80,7 @@ const lossesQB = [
 const comebackProfiles = [
     {
         wk: 'Week 4', matchup: '@ Las Vegas Raiders', score: 'W 25-24',
-        narrative: 'Trailed 14-9 at halftime. D\'Andre Swift punched in a 2-yard TD with 1:34 remaining to take the lead. The Bears defense then blocked a game-winning field goal attempt to seal the victory — the first real sign of the comeback magic that would define the season.',
+        narrative: 'Trailed 14-9 at halftime. D\'Andre Swift punched in a 2-yard TD with 1:34 remaining to take the lead. The Bears defense then blocked a game-winning field goal attempt to seal the victory - the first real sign of the comeback magic that would define the season.',
         statline: 'Williams: 22/37, 212 yds, 1 TD, 1 INT'
     },
     {
@@ -90,12 +90,12 @@ const comebackProfiles = [
     },
     {
         wk: 'Week 9', matchup: '@ Cincinnati Bengals', score: 'W 47-42',
-        narrative: 'A wild shootout where neither defense could hold. The Bengals took a 42-41 lead with just :54 remaining. Williams calmly drove the Bears downfield and connected with Cole Kmet\'s replacement, TE Cole Loveland, on a stunning 58-yard TD to win it — the kind of play that separates good QBs from great ones.',
+        narrative: 'A wild shootout where neither defense could hold. The Bengals took a 42-41 lead with just :54 remaining. Williams calmly drove the Bears downfield and connected with Cole Kmet\'s replacement, TE Cole Loveland, on a stunning 58-yard TD to win it - the kind of play that separates good QBs from great ones.',
         statline: 'Williams: 20/34, 280 yds, 3 TD, 53 rush yds'
     },
     {
         wk: 'Week 10', matchup: 'vs. New York Giants', score: 'W 24-20',
-        narrative: 'Trailed 20-10 with 10:19 left in the game. Williams orchestrated two scoring drives — a 2-yard TD pass to Rome Odunze and a 17-yard scramble TD — to retake the lead. The Bears defense held the Giants to just 7 yards on their final 3 possessions.',
+        narrative: 'Trailed 20-10 with 10:19 left in the game. Williams orchestrated two scoring drives - a 2-yard TD pass to Rome Odunze and a 17-yard scramble TD - to retake the lead. The Bears defense held the Giants to just 7 yards on their final 3 possessions.',
         statline: 'Williams: 20/36, 220 yds, 1 TD, 63 rush yds'
     },
     {
@@ -105,12 +105,12 @@ const comebackProfiles = [
     },
     {
         wk: 'Week 16', matchup: 'vs. Green Bay Packers', score: 'W 22-16 OT',
-        narrative: 'Trailed by 10 late in the fourth quarter against the rival Packers. The Bears scored a field goal, then recovered a gutsy onside kick and scored a TD to force overtime. In OT, Williams launched a 46-yard walk-off TD to DJ Moore — a dagger to end the rivalry game.',
+        narrative: 'Trailed by 10 late in the fourth quarter against the rival Packers. The Bears scored a field goal, then recovered a gutsy onside kick and scored a TD to force overtime. In OT, Williams launched a 46-yard walk-off TD to DJ Moore - a dagger to end the rivalry game.',
         statline: 'Williams: 19/34, 250 yds, 2 TD, 30 rush yds'
     },
     {
         wk: 'Wild Card', matchup: 'vs. Green Bay Packers', score: 'W 31-27',
-        narrative: 'The crown jewel. Trailed 21-3 at halftime. Win probability dropped to 3.0%. The Bears\' win probability never exceeded 25% from 6:51 in Q2 to 2:59 in Q4. Then the dam broke: 25 points in the fourth quarter — the 3rd-highest scoring postseason Q4 ever. Williams set the franchise record for playoff passing yards.',
+        narrative: 'The crown jewel. Trailed 21-3 at halftime. Win probability dropped to 3.0%. The Bears\' win probability never exceeded 25% from 6:51 in Q2 to 2:59 in Q4. Then the dam broke: 25 points in the fourth quarter - the 3rd-highest scoring postseason Q4 ever. Williams set the franchise record for playoff passing yards.',
         statline: 'Williams: 24/48, 361 yds, 2 TD, 2 INT | Franchise playoff passing record'
     }
 ];
@@ -1495,7 +1495,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Scroll spy — highlight nav link for the section currently in view
+    // Scroll spy - highlight nav link for the section currently in view
     const sectionIds = Array.from(navLinks).map(a => a.getAttribute('href').substring(1));
     const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
 
